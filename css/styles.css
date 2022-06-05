@@ -35,6 +35,8 @@ body {
     margin-top: 10px;
     height:45px;
     padding-left: 10px;
+    outline-color:blue;
+    border: none;
 }
 
 .login img {
@@ -45,7 +47,7 @@ body {
 }
 
 input::placeholder {
-    color:black;
+    color:blue;
     font-size: 14px;
     
 }
@@ -60,13 +62,12 @@ form [type="submit"] {
 }
 
 p{
-    color:black
+    color:rgb(19, 18, 18)
 }
  
 a{
     color:rgb(250, 28, 28);
-    font-size: larger
-    ;
+    font-size: larger;
     text-decoration: none;
     margin-left: 10px;
 
