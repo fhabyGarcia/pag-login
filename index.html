@@ -4,24 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="css/styles.css">
+    
 </head>
 <body>
-    <section class="area-login">
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+      <style>
+          .access-button{
+            width:50% !important;
+            border-radius:50px !important
+         
+        }
+      
+      </style>
+   
+      <section class="area-login">
         <div class="login">
     
             <div>
                 <img src="images/IMG-2022.jpg">
             </div>
-            <form method="POST">
-                <input type="text" name="nome" placeholder="Nome de Usuario" autofocus>
-                <input type="password" name="senha" placeholder="Sua Senha">
-                <input type="submit" value="entrar">
+            <form >
+
+                <input type="text"placeholder="Nome de Usuario" id="login">
+                <input type="password" placeholder="Senha" id="senha">
+                <input type="submit" onclick="logar(); return false" >
             
             </form>
-            <p>Ainda não tem uma conta?<a href="Criar Conta">Criar conta</a></p> 
+               <p> Ainda não uma conta?<a href="Criar Conta">Criar conta</a></p>
+            <script>
+
+                function logar(){
+
+                    var login = document.getElementById('login').value;
+                    var senha = document.getElementById('senha').value;
+
+                    if(login == "admin" && senha == "admin"){
+                        alert('Sucesso');
+                        location.href ="home.html";
+                    }else{
+                        alert('Usuário ou senha incorretos');
+                    }
+                 }
+
+            </script>
         </div>
     </section>
 </body>
-</html>
+</html> 
