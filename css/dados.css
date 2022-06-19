@@ -6,26 +6,11 @@ body{
 
 }
 
-form{
-    width: 50%;
-    margin: 5px;
-   
+form.card{
+    padding: inherit;
+    margin: inherit;
+    font-weight: bold;
+    padding-bottom: 5px;
+
 }
 
-.email{
-    width: 2%;
-}
-.senha{
-    width: 2%;
-}
-.nome{
-    padding-left: 10px;
-    width:10%;
-}
-.endereço{
-    padding-left: 10px;
-    width: 2%;
-}
-.Cidade {
-    width: 2%;
-}

@@ -39,23 +39,32 @@
 
                 <input type="text"placeholder="Nome de Usuario" id="login">
                 <input type="password" placeholder="Senha" id="senha">
-                <input type="submit" onclick="logar(); return false" >
+                <input type="submit" onclick="logar(); return false">
+            
+                
             
             </form>
                <p> Ainda não uma conta?<a href="Criar Conta">Criar conta</a></p>
+               
             <script>
 
                 function logar(){
+                    
 
                     var login = document.getElementById('login').value;
                     var senha = document.getElementById('senha').value;
-
+                    
                     if(login == "admin" && senha == "admin"){
                         alert('Sucesso');
-                        location.href ="home.html";
-                    }else{
+                        location.href ="formulario.html";
+                        
+                   }else{
                         alert('Usuário ou senha incorretos');
                     }
+                    
+                    
+                    
+
                  }
 
             </script>

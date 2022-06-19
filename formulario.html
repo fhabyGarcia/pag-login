@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="css/dados.css" type="text/css">
+    <link rel="stylesheet" href="css/dados.css">
 </head>
 <body>
   <h3> Bem-vindo a página de Cadastro </h3>
@@ -13,34 +13,34 @@
 </body>
 
     <form class="card">
-       <div class="email">
+       <div class="form-group">
        <label for="inputEmail4">Email</label>
         <input type="email" class="form-control" id="inputEmail4" placeholder="">
       </div>
       
-      <div class="senha">
-        <label for="inputPassword4">Senha</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="">
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input class="form-control" type="password" class="form-control" id="senha" placeholder="">
       </div>
     
     
-    <div class="nome">
+    <div class="form-group">
       <label for="inputAddress">Nome</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Rua...., nº ...">
+      <input class="form-control" type="text" class="form-control" id="inputAddress" placeholder="Rua...., nº ...">
     </div>
     
-    <div class="endereço">
+    <div class="form-group">
       <label for="inputAddress2">Endereço </label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+      <input class="form-control" type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
     </div>
     
-    <div class="cidade">
+    <div class="form-group">
       <div class="form-group col-md-6">
         <label for="inputCity">Cidade</label>
-        <input type="text" class="form-control" id="inputCity">
+        <input class="form-control" type="text" class="form-control" id="inputCity">
       </div>
       
-      <div class="estado">
+      <div class="form-group">
         <label for="inputEstado">Estado</label>
         <select id="inputEstado" class="form-control">
           <option selected>Escolher...</option>
@@ -48,7 +48,7 @@
         </select>
       </div>
      
-      <div class="cep">
+      <div class="form-group">
         <label for="inputCEP">CEP</label>
         <input type="text" class="form-control" id="inputCEP">
       </div>
@@ -60,15 +60,17 @@
       </div>
     </div>
 
-    <div class="cartão do sus">
+    <div class="form-group">
         <label for="inputCEP">Cartão do SUS</label>
         <input type="text" class="form-control" id="inputCEP">
       </div>
     </div>
 
-    <div class="cpf">
+    <div class="form-group">
         <label for="inputCEP">CPF</label>
+        <br><br>
         <input type="text" class="form-control" id="inputCEP">
+        <br><br>
       </div>
     </div>
    
@@ -77,7 +79,7 @@
         
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Entrar</button>
+    <button type="submit" class="btn btn-sucess">Entrar</button>
   </form>
 
 </html>
